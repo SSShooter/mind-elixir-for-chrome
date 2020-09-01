@@ -9,6 +9,9 @@
 
 <body>
     <div id="map"></div>
+    <div id="export-json">导出 JSON</div>
+    <div id="export-svg">导出 SVG</div>
+    <div id="export-png">导出 PNG</div>
     <style>
         html,
         body {
@@ -21,10 +24,30 @@
             height: 100%;
             width: 100%;
         }
+
+        #export-json,
+        #export-svg,
+        #export-png {
+            position: fixed;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        #export-json {
+            bottom: 50px;
+        }
+
+        #export-svg {
+            bottom: 30px;
+        }
+
+        #export-png {
+            bottom: 10px;
+        }
     </style>
     <script src="./node_modules/regenerator-runtime/runtime.js"></script>
     <script src="./node_modules/mind-elixir/dist/mind-elixir.js"></script>
-    <script src="./node_modules/mind-elixir/dist/painter.js"></script>
+    <!-- <script src="./node_modules/mind-elixir/dist/painter.js"></script> -->
     <script src="index.js"></script>
 </body>
 
