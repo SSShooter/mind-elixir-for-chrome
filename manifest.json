@@ -1,0 +1,20 @@
+{
+  "name": "mind-elixir-for-chrome",
+  "description": "mind-elixir-for-chrome",
+  "version": "1.0",
+  "homepage_url": "https://github.com/ssshooter/syncHime",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "syncHime"
+  },
+  "permissions": [
+    "notifications",
+    "storage"
+  ],
+  "manifest_version": 2
+}
