@@ -9,7 +9,9 @@
 
 <body>
     <div id="map"></div>
-    <input type="file" id="import" accept="application/json">导入 JSON
+    <label class="file-label">
+        <input type="file" id="import" accept="application/json">导入 JSON
+    </label>
     <div id="export-json">导出 JSON</div>
     <div id="export-svg">导出 SVG</div>
     <div id="export-png">导出 PNG</div>
@@ -29,30 +31,34 @@
         #export-json,
         #export-svg,
         #export-png,
-        #import {
+        .file-label {
             position: fixed;
-            left: 10px;
+            left: 20px;
             cursor: pointer;
         }
 
         #import {
-            bottom: 70px;
+            display: none;
+        }
+
+        .file-label {
+            bottom: 110px;
         }
 
         #export-json {
-            bottom: 50px;
+            bottom: 80px;
         }
 
         #export-svg {
-            bottom: 30px;
+            bottom: 50px;
         }
 
         #export-png {
-            bottom: 10px;
+            bottom: 20px;
         }
     </style>
     <script src="./node_modules/regenerator-runtime/runtime.js"></script>
-    <script src="./node_modules/mind-elixir/dist/mind-elixir.js"></script>
+    <script src="./node_modules/mind-elixir/dist/MindElixir.js"></script>
     <script src="./node_modules/mind-elixir/dist/painter.js"></script>
     <script src="index.js"></script>
 </body>

@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mind-elixir": "^0.11.1",
+    "mind-elixir": "^0.11.3",
     "regenerator-runtime": "^0.13.7"
   }
 }
