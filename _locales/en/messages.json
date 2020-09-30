@@ -1,0 +1,14 @@
+{
+    "import_json": {
+        "message": "Import JSON"
+    },
+    "export_json": {
+        "message": "Export JSON"
+    },
+    "export_svg": {
+        "message": "Export SVG"
+    },
+    "export_png": {
+        "message": "Export PNG"
+    }
+}

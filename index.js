@@ -1,6 +1,10 @@
+let locale = chrome.i18n.getUILanguage()
+console.log(locale)
+
 let mind = new MindElixir({
     el: "#map",
-    direction: MindElixir.LEFT,
+    locale: locale.replace('-','_'),
+    direction: MindElixir.SIDE,
     // create new map data
     data: MindElixir.new("new topic"),
     // or set as data that is return from `.getAllData()`
@@ -40,3 +44,12 @@ document.querySelector("#import").onchange = e => {
     };
     reader.readAsText(file);
 }
+
+function i18n() {
+    let els = document.querySelectorAll('[data-i18n]')
+    for (let i = 0; i < els.length; i++) {
+        let el = els[i]
+        el.innerHTML = chrome.i18n.getMessage(el.dataset.i18n)
+    }
+}
+i18n()

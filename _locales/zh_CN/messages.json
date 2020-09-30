@@ -1,0 +1,14 @@
+{
+    "import_json": {
+        "message": "导入 JSON"
+    },
+    "export_json": {
+        "message": "导出 JSON"
+    },
+    "export_svg": {
+        "message": "导出 SVG"
+    },
+    "export_png": {
+        "message": "导出 PNG"
+    }
+}
